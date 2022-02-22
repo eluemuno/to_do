@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %} Edit Your Idea {% endblock %}
+
+{% block main %}
+
+<div>
+    <h3>Edit the fields and select "Update"</h3>
+
+    <form action="/edit/{{data['id']}}" method="POST">
+        <input class="title" name="title" placeholder="Title" value="{{data['title']}}">
+        <textarea name="details" placeholder="Details">{{data['details']}}</textarea>
+        <button type="submit">Update</button>
+    </form>
+</div>
+
+{% endblock %}

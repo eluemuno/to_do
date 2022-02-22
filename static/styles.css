@@ -1,0 +1,84 @@
+body{
+    max-width: 1440px;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+}
+h1, h3{
+    text-align: center;
+}
+
+h4{
+    margin: 0;
+}
+
+form{
+    background: #dddfff;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+input, textarea{
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+text-area{
+    min-height: 100px;
+}
+
+button{
+    background: #444fff;
+    color: #fff;
+    justify-content: center;
+    border-width: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 8px 15px;
+}
+
+.idea-collection{
+    background: #F0F8FF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px black;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.idea-note{
+    flex-basis: 300px;
+    border-radius: 10px;
+    flex-flow: column wrap;
+    margin: 10px;
+    display: flex;
+}
+
+.idea-title{
+    background: #aaafff;
+    background: #6495ED;
+    min-height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.idea-details{
+    padding: 5px;
+    color: #DCDCDC;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    margin: 5px;
+}

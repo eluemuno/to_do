@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block title %} Welcome {% endblock %}
+
+{% block main %}
+<form action="/ideas" method="POST">
+    <input type="text" name="title" placeholder="Title" required>
+    <textarea name="details" placeholder="Details" required></textarea>
+    <button type="submit">Save</button>
+</form>
+
+<div class="idea-collection">
+    <br>
+    {% for idea in data %}
+    <div class="idea-note">
+        <div class="idea-title"><h4>{{ loop.index }}.{{ idea.title }}</h4></div>
+    </div>
+    <br>
+    <div class="idea.details">
+        <p><i>{{ idea.details }}</i></p>
+    </div>
+    <div class="buttons">
+        <a href="/delete/{{ idea.id }}"><button>Delete</button></a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
